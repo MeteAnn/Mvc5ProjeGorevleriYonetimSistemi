@@ -1,0 +1,81 @@
+﻿@model Mvc5ProjeGorevleriYonetimSistemi.Models.PersonelBilgileri
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card mb-4">
+    <h5 class="card-header">Profile Detayları</h5>
+    <!-- Account -->
+    <div class="card-body">
+   
+    </div>
+    <hr class="my-0">
+    <div class="card-body">
+        <form id="formAccountSettings" method="POST" onsubmit="return false">
+            <div class="row">
+                <div class="mb-3 col-md-6">
+                    <label for="AdSoyad" class="form-label">Ad Soyad: </label>
+                    @Html.DisplayFor(model => model.AdSoyad)
+                </div>
+                <div class="mb-3 col-md-6">
+                    <label for="eposta" class="form-label">E-POSTA</label>
+                    @Html.DisplayFor(model => model.Eposta)
+
+                </div>
+                <div class="mb-3 col-md-6">
+                    <label for="sifre" class="form-label">Şifre</label>
+                    @Html.DisplayFor(model => model.Sifre)
+
+                </div>
+                <div class="mb-3 col-md-6">
+                    <label for="yetki" class="form-label">YETKİ</label>
+                    @Html.DisplayFor(model => model.Yetki)
+                </div>
+                <div class="mb-3 col-md-6">
+                    <label class="form-label" for="personelgorseli">Personel Görseli</label>
+                    @Html.DisplayFor(model => model.PersonelGörseli)
+                </div>
+                <div class="mb-3 col-md-6">
+                    <label for="tckn" class="form-label">TCKN</label>
+                    @Html.DisplayFor(model => model.TCNO)
+
+                </div>
+
+                <div class="mb-3 col-md-6">
+                    <label for="departman" class="form-label">Departman</label>
+                    @Html.DisplayFor(model => model.Departman)
+                </div>
+                <div class="mb-3 col-md-6">
+                    <label for="gorev" class="form-label">Görev</label>
+                    @Html.DisplayFor(model => model.Gorev)
+                </div>
+                <div class="mb-3 col-md-6">
+                    <label for="aciklama" class="form-label">Açıklama</label>
+                    @Html.DisplayFor(model => model.PozisyonAciklama)
+                </div>
+                <div class="mb-3 col-md-6">
+                    <label for="adres" class="form-label">Adres Bilgileri</label>
+                    @Html.DisplayFor(model => model.Adres)
+                </div>
+                <div class="mb-3 col-md-6">
+                    <label for="adres" class="form-label">Doğum Tarihi</label>
+                    @Html.DisplayFor(model => model.DogumTarihi)
+                </div>
+                <div class="mb-3 col-md-6">
+                    <label for="adres" class="form-label">İşe Giriş Tarihi</label>
+                    @Html.DisplayFor(model => model.IseGirisTarihi)
+                </div>
+
+
+
+            </div>
+            <div class="mt-2">
+                <a href="/PersonelBilgileris/Index" class="btn btn-primary me-2">Geri Dön</a>
+            </div>
+        </form>
+    </div>
+    <!-- /Account -->
+</div>
+
